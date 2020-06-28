@@ -43,4 +43,9 @@ public class TubaTest {
     public void canPlaySounds(){
         assertEquals("Tuba Sounds", tuba.playsSound());
     }
+
+    @Test
+    public void canGetMarkUp(){
+        assertEquals(100, tuba.calculateMarkUp());
+    }
 }

@@ -1,8 +1,8 @@
 package Shop.Instruments;
 
-import Behaviours.IPlay;
 
-public class Saxophone extends MusicInstrument implements IPlay {
+
+public class Saxophone extends MusicInstrument {
     private String mouthPieceSize;
 
     public Saxophone(String name, String type, int buyingPrice, int sellingPrice, String mouthPieceSize ){

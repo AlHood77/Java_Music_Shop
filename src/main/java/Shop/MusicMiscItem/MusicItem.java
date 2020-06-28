@@ -1,6 +1,8 @@
 package Shop.MusicMiscItem;
 
-public abstract class MusicItem {
+import Behaviours.ISell;
+
+public abstract class MusicItem implements ISell {
     private String description;
     private int buyingPrice;
     private int sellingPrice;
@@ -21,5 +23,9 @@ public abstract class MusicItem {
 
     public int getSellingPrice() {
         return sellingPrice;
+    }
+
+    public int calculateMarkUp(){
+        return getSellingPrice() - getBuyingPrice();
     }
 }

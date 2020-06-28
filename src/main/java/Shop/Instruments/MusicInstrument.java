@@ -1,8 +1,10 @@
 package Shop.Instruments;
 
 import Behaviours.IPlay;
+import Behaviours.ISell;
 
-public abstract class MusicInstrument {
+
+public abstract class MusicInstrument implements IPlay, ISell {
     private String name;
     private String type;
     private int buyingPrice;
@@ -30,6 +32,12 @@ public abstract class MusicInstrument {
     public int getSellingPrice() {
         return sellingPrice;
     }
+
+    public int calculateMarkUp(){
+        return getSellingPrice() - getBuyingPrice();
+    }
+
+
 
 
 }
