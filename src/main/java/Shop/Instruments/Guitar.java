@@ -1,6 +1,8 @@
 package Shop.Instruments;
 
-public class Guitar extends MusicInstrument {
+import Behaviours.IPlay;
+
+public class Guitar extends MusicInstrument implements IPlay {
     private String guitarType;
     private int numberOfStrings;
 
@@ -16,5 +18,9 @@ public class Guitar extends MusicInstrument {
 
     public int getNumberOfStrings() {
         return numberOfStrings;
+    }
+
+    public String playsSound() {
+        return "Guitar Sounds";
     }
 }

@@ -38,4 +38,9 @@ public class TubaTest {
     public void hasSize(){
         assertEquals(3, tuba.getSize());
     }
+
+    @Test
+    public void canPlaySounds(){
+        assertEquals("Tuba Sounds", tuba.playsSound());
+    }
 }

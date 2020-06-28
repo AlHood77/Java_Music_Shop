@@ -1,6 +1,8 @@
 package Shop.Instruments;
 
-public class Tuba extends MusicInstrument {
+import Behaviours.IPlay;
+
+public class Tuba extends MusicInstrument implements IPlay {
     private int size;
 
     public Tuba(String name, String type, int buyingPrice, int sellingPrice, int size ){
@@ -10,5 +12,9 @@ public class Tuba extends MusicInstrument {
 
     public int getSize() {
         return size;
+    }
+
+    public String playsSound() {
+        return "Tuba Sounds";
     }
 }

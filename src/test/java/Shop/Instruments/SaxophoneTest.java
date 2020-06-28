@@ -39,7 +39,10 @@ public class SaxophoneTest {
         assertEquals("Medium", saxophone.getMouthPieceSize());
     }
 
-
+    @Test
+    public void canPlaySounds() {
+        assertEquals("Saxophone Sounds", saxophone.playsSound());
+    }
 
 
 

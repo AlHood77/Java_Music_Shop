@@ -1,5 +1,7 @@
 package Shop.Instruments;
 
+import Behaviours.IPlay;
+
 public abstract class MusicInstrument {
     private String name;
     private String type;
@@ -28,4 +30,6 @@ public abstract class MusicInstrument {
     public int getSellingPrice() {
         return sellingPrice;
     }
+
+
 }
